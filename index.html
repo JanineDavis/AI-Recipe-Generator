@@ -15,19 +15,23 @@
         <h1>Recipe Generator</h1>
       </header>
       <main>
-        <form id="recipe-generator">
-          <input
-            type="text"
-            placeholder="Search ingredients"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="button" />
-        </form>
-        <div id="recipe" class="recipe"></div>
+        <div class="form-wrapper">
+          <form id="recipe-generator">
+            <input
+              type="text"
+              placeholder="Search ingredients"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="button" />
+          </form>
+          <div class="hint">eg. Steak, lettuce and cheese</div>
+        </div>
+
+        <div id="recipe" class="recipe hidden"></div>
       </main>
 
       <footer>

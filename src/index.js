@@ -17,11 +17,13 @@ function generateRecipe(event) {
     "You are a busy family and all recipes should take under 30 minutes to prepare. Provide an overview of the time to make. Provide answer in basic HTML format using lists and include a picture";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.innerHTML = `<div class="blink">🔎 Generating recipe for ${instructionsInput.value}</div>`;
+
   console.log("Generating recipe");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
   axios.get(apiURL).then(displayRecipe);
-  alert("Generating recipe");
 }
 
 let recipeFormElement = document.querySelector("#recipe-generator");
