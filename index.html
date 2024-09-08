@@ -8,34 +8,37 @@
     <title>AI Recipe Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to my recipe generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Search"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div id="recipe">
-        //photo <br />
-        //recipe
-      </div>
-    </main>
+    <div class="container">
+      <header>
+        <h1>Welcome to my recipe generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Search"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="button" />
+        </form>
+        <div id="recipe" class="recipe">
+          //photo <br />
+          //recipe
+        </div>
+      </main>
 
-    <footer>
-      This was coded by Janine Davis and is open-sourced
-      <a
-        href="https://github.com/JanineDavis/AI-Recipe-Generator"
-        target="_blank"
-        >on GitHub
-      </a>
-    </footer>
+      <footer>
+        This was coded by Janine Davis and is open-sourced
+        <a
+          href="https://github.com/JanineDavis/AI-Recipe-Generator"
+          target="_blank"
+          >on GitHub
+        </a>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
