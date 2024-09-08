@@ -20,9 +20,6 @@ function generateRecipe(event) {
   let recipeElement = document.querySelector("#recipe");
   recipeElement.innerHTML = `<div class="blink">🔎 Generating recipe for ${instructionsInput.value}</div>`;
 
-  console.log("Generating recipe");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
   axios.get(apiURL).then(displayRecipe);
 }
 
